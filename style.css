@@ -1,0 +1,69 @@
+.theme{
+    font-family: sans-serif;
+}
+hr{
+    border: 1px solid red;
+}
+.header-container{
+    background: red;
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+}
+.company-logo img{
+    width: 100%;
+    background: black;
+}
+/*Search button CSS*/
+
+.header-container .search-box button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    transition: 0.5s;
+}
+.header-container .search-box button:hover{
+    color: white;
+    background: blue;
+}
+.header-container .search-box input{
+    font-size: 25px;
+    background: white;
+    border: none;
+    padding-left: 10px;
+    width: 85%;
+}
+/*Menu Button CSS*/
+.header-container .dropdown button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    height: 50px;
+}
+.header-container .dropdown ul{
+    background: black;
+}
+.header-container .dropdown .dropdown-menu li{
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.header-container .dropdown .dropdown-menu a{
+    text-decoration: none;
+    color: white;
+}
+/*Slider CSS*/
+.main-container{
+    height: 200px;
+    margin-top: 10px;
+}
+.main-container .slider{
+    width: 100%;
+}
+.main-container .slider img{
+    width: 100%;
+    height: 110px;
+}
