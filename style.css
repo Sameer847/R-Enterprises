@@ -1,132 +1,144 @@
-.theme{
-    font-family: sans-serif;
+.mobile-view{
+    display: none;
 }
-hr{
-    border: 1px solid red;
-    margin-top: 3px;
-}
-.header-container{
-    background: red;
-    height: 50px;
-    width: 100%;
-    display: inline-flex;
-}
-.company-logo img{
-    width: 100%;
-    background: black;
-}
-/*Search button CSS*/
+@media only screen and (max-width: 600px){
+    .mobile-view{
+        font-family: sans-serif;
+        display: block;
+    }
+    .desktop-view{
+        display: none;
+    }
+    #message{
+        display: none;
+    }
+    hr{
+        border: 1px solid red;
+        margin-top: 3px;
+    }
+    .header-container{
+        background: red;
+        height: 50px;
+        width: 100%;
+        display: inline-flex;
+    }
+    .company-logo img{
+        width: 100%;
+        background: black;
+    }
+    /*Search button CSS*/
 
-.header-container .search-box button{
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 25px;
-    height: 50px;
-    transition: 0.5s;
-}
-.header-container .search-box button:hover{
-    color: white;
-    background: blue;
-}
-.header-container .search-box input{
-    font-size: 25px;
-    background: white;
-    border: none;
-    padding-left: 10px;
-    width: 85%;
-}
-/*Menu Button CSS*/
-.header-container .dropdown button{
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 30px;
-    height: 50px;
-}
-.header-container .dropdown ul{
-    background: black;
-}
-.header-container .dropdown .dropdown-menu li{
-    font-size: 20px;
-    line-height: 50px;
-    margin-left: 10px;
-}
-.header-container .dropdown .dropdown-menu a{
-    text-decoration: none;
-    color: white;
-}
-/*Accounts CSS*/
-.line-break{
-    width: 100%;
-    margin-bottom: 0px;
-    height: 2px;
-    display: block;
-}
-.accounts-container{
-    height: 50px;
-    background-color: red;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.accounts-container div{
-    width: 33%;
-}
-.accounts-container div button{
-    width: 100%;
-    background: transparent;
-    height: 100%;
-    color: white;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-.accounts-container div button:hover{
-    background: blue;
-}
-/*Slider CSS*/
-.main-container{
-    height: 200px;
-    margin-top: 2px;
-}
-.main-container .slider{
-    width: 100%;
-}
-.main-container .slider img{
-    width: 100%;
-    height: 110px;
-}
-/*Product Category CSS*/
-.label{
-    color: white;
-    background: red;
-    display: block;
-    margin: 10px 60px;
-    text-align: center;
-    border-radius: 20px;
-    font-weight: bold;
-}
-.products-category{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.products-category div{
-    display: block;
-    border: 2px solid black;
-    width: 45%;
-    margin: 5px;
-    height: 100px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-}
-.products-category div p{
-    border-bottom: 1px solid black;
-}
-.products-category div i{
-    font-size: 50px;
+    .header-container .search-box button{
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 25px;
+        height: 50px;
+        transition: 0.5s;
+    }
+    .header-container .search-box button:hover{
+        color: white;
+        background: blue;
+    }
+    .header-container .search-box input{
+        font-size: 25px;
+        background: white;
+        border: none;
+        padding-left: 10px;
+        width: 85%;
+    }
+    /*Menu Button CSS*/
+    .header-container .dropdown button{
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+        height: 50px;
+    }
+    .header-container .dropdown ul{
+        background: black;
+    }
+    .header-container .dropdown .dropdown-menu li{
+        font-size: 20px;
+        line-height: 50px;
+        margin-left: 10px;
+    }
+    .header-container .dropdown .dropdown-menu a{
+        text-decoration: none;
+        color: white;
+    }
+    /*Accounts CSS*/
+    .line-break{
+        width: 100%;
+        margin-bottom: 0px;
+        height: 2px;
+        display: block;
+    }
+    .accounts-container{
+        height: 50px;
+        background-color: red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .accounts-container div{
+        width: 33%;
+    }
+    .accounts-container div button{
+        width: 100%;
+        background: transparent;
+        height: 100%;
+        color: white;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    .accounts-container div button:hover{
+        background: blue;
+    }
+    /*Slider CSS*/
+    .main-container{
+        height: 200px;
+        margin-top: 2px;
+    }
+    .main-container .slider{
+        width: 100%;
+    }
+    .main-container .slider img{
+        width: 100%;
+        height: 110px;
+    }
+    /*Product Category CSS*/
+    .label{
+        color: white;
+        background: red;
+        display: block;
+        margin: 20px 40px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .products-category{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .products-category div{
+        display: block;
+        border: 2px solid black;
+        width: 45%;
+        margin: 5px;
+        height: 100px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .products-category div p{
+        border-bottom: 1px solid black;
+    }
+    .products-category div i{
+        font-size: 50px;
+    }
 }
