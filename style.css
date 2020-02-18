@@ -27,13 +27,16 @@
         background: black;
     }
     /*Search button CSS*/
-
+    .header-container .search-box{
+        margin-top: 6px;
+    }
     .header-container .search-box button{
         background: transparent;
         border: none;
         color: white;
-        font-size: 25px;
-        height: 50px;
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
         transition: 0.5s;
     }
     .header-container .search-box button:hover{
@@ -41,18 +44,21 @@
         background: blue;
     }
     .header-container .search-box input{
-        font-size: 25px;
+        font-size: 22px;
         background: white;
         border: none;
         padding-left: 10px;
-        width: 85%;
+        width: 80%;
+    }
+    .header-container .search-box input::-webkit-search-cancel-button{
+        display: none;
     }
     /*Menu Button CSS*/
     .header-container .dropdown button{
         background: transparent;
         border: none;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         height: 50px;
     }
     .header-container .dropdown ul{
@@ -112,9 +118,10 @@
     /*Product Category CSS*/
     .label{
         color: white;
+        font-size: 20px;
         background: red;
         display: block;
-        margin: 20px 40px;
+        margin: 10px 20px;
         text-align: center;
         border-radius: 20px;
         font-weight: bold;
@@ -126,19 +133,82 @@
     }
     .products-category div{
         display: block;
-        border: 2px solid black;
+        border: thick ridge grey;
         width: 45%;
         margin: 5px;
         height: 100px;
         cursor: pointer;
         text-align: center;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 13.80px;
+    }
+    .products-category div img{
+        width: 100%;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    .products-category div img:hover{
+        transform: scale(1.1);
     }
     .products-category div p{
         border-bottom: 1px solid black;
     }
     .products-category div i{
         font-size: 50px;
+    }
+    /*Header CSS*/
+    .footer-container{
+        background: black;
+        height: 23px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-container a{
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;    
+        font-size: 13px;
+    }
+    .footer-container a:hover{
+        color: gold;
+    }
+    /*Car Battery CSS*/
+    .four-wheeler-brands {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .four-wheeler-brands div{
+        display: block;
+        border: thick ridge grey;
+        width: 45%;
+        margin: 5px;
+        height: 100px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13.80px;
+    }
+    .four-wheeler-brands div img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*Our Products CSS*/
+    .our-products{
+        border: thick ridge red;
+        margin: 10px;
+    }
+    .our-products h3{
+        text-align: center;
+        background: red;
+        color: white;
+        font-weight: bold;
+    }
+    .our-products p{
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
     }
 }
